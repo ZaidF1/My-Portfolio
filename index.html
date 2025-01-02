@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Zaid Faizal, a skilled frontend developer specialized in modern web technologies.">
+    <meta name="keywords" content="Zaid Faizal, frontend developer, web development, UI/UX design">
+    <meta name="author" content="Zaid Faizal">
     <title>Portfolio - Zaid Faizal</title>
     <style>
         body {
@@ -88,6 +91,22 @@
         section h2 {
             color: #58a6ff;
         }
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+        section ul li {
+            margin: 10px 0;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
         form {
             max-width: 600px;
             margin: auto;
@@ -137,18 +156,18 @@
     <header>
         <div class="logo">Zaid Faizal</div>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" aria-label="Navigate to Home">Home</a>
+            <a href="#about" aria-label="Navigate to About">About</a>
+            <a href="#services" aria-label="Navigate to Services">Services</a>
+            <a href="#portfolio" aria-label="Navigate to Portfolio">Portfolio</a>
+            <a href="#contact" aria-label="Navigate to Contact">Contact</a>
         </nav>
     </header>
 
     <div id="home" class="container">
         <div class="intro">
-            <h1>Hi, I'm <span>Zaid Faizal</span><br>Script Writer</h1>
-            <p>LI am a passionate programmer with a keen eye for detail and a love for building functional, user-friendly websites. With years of experience in web development, I specialize in crafting responsive and modern web applications that cater to diverse client needs.</p>
+            <h1>Hi, I'm <span>Zaid Faizal</span><br>Frontend Developer</h1>
+            <p>I am a passionate programmer with a keen eye for detail and a love for building functional, user-friendly websites. With years of experience in web development, I specialize in crafting responsive and modern web applications that cater to diverse client needs.</p>
             <div class="about-me">
             </div>
             <div class="buttons">
@@ -157,32 +176,36 @@
             </div>
         </div>
         <div class="image-container">
-            <img src="Zaid Faizal.jpeg" alt="Profile Picture">
+            <img src="Zaid Faizal.jpeg" alt="Profile Picture of Zaid Faizal">
         </div>
     </div>
 
     <section id="about">
         <h2>About Me</h2>
         <p>I am a frontend developer with a strong foundation in modern web technologies. I thrive on solving problems and delivering clean, efficient code that brings ideas to life.</p>
+        <p>Over the years, I have worked with diverse clients, understanding their needs and translating them into intuitive digital solutions. My journey in web development has been fueled by curiosity and a commitment to staying updated with the latest industry trends and tools. Beyond coding, I enjoy collaborating with teams, brainstorming creative ideas, and ensuring each project exceeds expectations.</p>
+        <p>When I am not coding, I explore design trends, engage in community tech events, and enjoy football matches.</p>
     </section>
 
     <section id="services">
         <h2>Services</h2>
         <ul>
-            <li>Web Design and Development</li>
-            <li>Responsive Websites</li>
-            <li>UI/UX Design</li>
+            <li>Web Design and Development: Creating visually appealing and functional websites tailored to your brand's identity.</li>
+            <li>Responsive Websites: Ensuring seamless user experience across all devices, from desktops to mobile phones.</li>
+            <li>UI/UX Design: Crafting user interfaces that are not just beautiful but also intuitive and engaging.</li>
+            <li>Custom Web Applications: Developing tailored solutions to meet unique business requirements.</li>
+            <li>Website Maintenance: Providing ongoing support and updates to keep your site running smoothly.</li>
         </ul>
     </section>
 
     <section id="portfolio">
         <h2>Portfolio</h2>
         <p>Check out some of my recent projects:</p>
-        <ul>
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-        </ul>
+        <div class="portfolio-grid">
+            <img src="https://via.placeholder.com/200" alt="Project 1">
+            <img src="https://via.placeholder.com/200" alt="Project 2">
+            <img src="https://via.placeholder.com/200" alt="Project 3">
+        </div>
     </section>
 
     <section id="contact">
